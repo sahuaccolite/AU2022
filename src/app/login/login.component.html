@@ -1,0 +1,43 @@
+<!-- Reactive forms -->
+<div class="" [formGroup]="user">
+    <div class="form-group">
+        <label>User Name</label>
+        <input type="text" formControlName="name">
+        <!-- <span class="error" *ngIf="userName?.errors?.['required']"> user name is not valid</span>
+    <span class="error" *ngIf="userName?.errors?.['minlength']"> you must need 4 char to be entered..</span> -->
+
+    </div>
+    <div class="form-group">
+        <label>email</label>
+        <input type="text" formControlName="email">
+        <!-- <span class="error" *ngIf="name_not_valid"> email name is not valid</span> -->
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="text" formControlName="password">
+    </div>
+    <input type="submit" class="submitButton"
+      [ngClass]="{'disabled-class': !user.valid}"
+    (click)="fromSubmit()" [disabled]="!user.valid"> 
+</div>
+
+<!-- <div class="login-form">
+    <h1> login here</h1>
+<div class="form-group">
+    <label >User Name</label>
+    <input type="text" required [(ngModel)]="user.name" minlength="4" #userName="ngModel"> 
+    <span class="error" *ngIf="userName?.errors?.['required']"> user name is not valid</span>
+    <span class="error" *ngIf="userName?.errors?.['minlength']"> you must need 4 char to be entered..</span>
+
+    {{exploreNgModal(userName)}}
+</div>
+<div class="form-group">
+    <label >email</label>
+    <input type="text" [(ngModel)]="user.email" (keyup) ="keyUpOp($event)"> 
+    <span class="error" *ngIf="name_not_valid"> email name is not valid</span>
+</div>
+<div class="form-group">
+    <label >Password</label>
+    <input type="text" [(ngModel)]="user.password"> 
+</div>
+</div> -->

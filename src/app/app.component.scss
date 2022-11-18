@@ -1,0 +1,28 @@
+body{
+    height: 100%;
+    background-color: #ffd6d6;
+}
+header{
+    background-color: lightblue;
+    padding: 15px;
+}
+
+aside{
+    margin-top: 10px;
+    background-color: aliceblue;
+    padding: 15px;
+    width: 100px;
+}
+.main{
+    display: flex;
+    height: 500px;
+}
+section{
+    padding: 15px;
+    margin:  10px;
+    width:90%
+}
+footer{
+    background-color: #ffd6d6;
+    padding: 15px;
+}

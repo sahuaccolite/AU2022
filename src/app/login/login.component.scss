@@ -1,0 +1,25 @@
+.form-group{
+   margin: 50px;
+   padding-left: 10px;
+}
+
+.login-form{
+    background-color: aquamarine;
+}
+.error{
+    font-size:smaller;
+    color: red;
+}
+.submitButton{
+  padding: 5px;
+  margin-left: 50px;
+  background-color: indigo;
+  color: #fff;
+}
+.disabled-class{
+    padding: 5px;
+    margin-left: 50px;
+    background-color: gray;
+    color: #fff;
+    opacity: 0.5;
+}

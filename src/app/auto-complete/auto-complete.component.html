@@ -1,0 +1,4 @@
+<input type="text" (input)="search($event)">
+<div *ngFor="let word of (searchWord_list |async)">
+    {{word}}
+</div>

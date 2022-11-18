@@ -1,0 +1,8 @@
+<div  *ngFor="let userPhoto of userPhotos" style="display: flex;">
+    <div class="card">
+          <p>{{userPhoto.albumId}} </p>
+          <p> {{userPhoto.title}}</p>
+          <p><img [src]="userPhoto.thumbnailUrl"/> </p>
+         
+    </div>
+</div>
